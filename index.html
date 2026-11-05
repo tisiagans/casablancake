@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casablancake – White House of Cakes</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1 class="font-elegant logo">Casablancake</h1>
+  <nav class="font-body">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#tentang">About ▾</a>
+        <!-- Dropdown Menu UTS -->
+        <ul class="dropdown-menu">
+          <li><a href="#tentang">Profil Lembaga</a></li>
+          <li><a href="#tentang">Visi & Misi</a></li>
+        </ul>
+      </li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Kreasi Tulisan Berjalan UTS -->
+<div class="marquee-container font-body">
+  <marquee behavior="scroll" direction="left">Selamat datang di Casablancake! Dapatkan promo spesial White Cheesecake diskon 15% minggu ini. Buka setiap hari pukul 08.00 - 20.00.</marquee>
+</div>
+
+<section class="hero">
+  <p class="font-accent">White House of Cakes</p>
+  <h2 class="font-elegant">Pure White, Pure Delight</h2>
+  <p class="font-body">Cake lembut yang dibuat dengan sepenuh hati.</p>
+  <img src="images/longcake.jfif" alt="Cake Casablancake">
+</section>
+
+<!-- BUNGKUSAN MAIN BODY & SIDEBAR (Agar tidak hancur) -->
+<div class="content-wrapper">
+  
+  <!-- MAIN BODY -->
+  <main class="main-body">
+    <div id="tentang" class="about">
+      <h2 class="font-elegant">Tentang Kami</h2>
+      <p class="font-body">Casablanca berarti “rumah putih”. Casablancake adalah toko kue dengan sentuhan serba putih yang bersih, hangat, dan lembut.</p>
+    </div>
+
+    <!-- 3 Posting Artikel/Produk dengan Read More (Syarat UTS) -->
+    <div id="cake" class="products" style="margin-top: 40px;">
+      <h2 class="font-elegant">Produk & Artikel</h2>
+      <div class="grid">
+        <figure data-url="cake1.html">
+          <img src="images/cake1.jfif" alt="Cloud Vanilla Cake">
+          <div class="info">
+            <h3 class="font-elegant">Cloud Vanilla Cake</h3>
+            <p class="font-body">Cake vanilla yang lembut dengan krim putih halus.</p>
+            <span class="price font-body">Rp 85.000</span>
+            <span class="read-more font-body">Read More</span>
+          </div>
+        </figure>
+        <figure data-url="cake2.html">
+          <img src="images/cake2.jfif" alt="Snow Chiffon Cake">
+          <div class="info">
+            <h3 class="font-elegant">Snow Chiffon Cake</h3>
+            <p class="font-body">Chiffon ringan dan empuk, taburan keju.</p>
+            <span class="price font-body">Rp 70.000</span>
+            <span class="read-more font-body">Read More</span>
+          </div>
+        </figure>
+        <figure data-url="cake3.html">
+          <img src="images/cake3.jfif" alt="White Cheesecake">
+          <div class="info">
+            <h3 class="font-elegant">White Cheesecake</h3>
+            <p class="font-body">Cheesecake creamy dasar biskuit renyah.</p>
+            <span class="price font-body">Rp 95.000</span>
+            <span class="read-more font-body">Read More</span>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="widget">
+      <h3 class="font-elegant">Profil Pemilik</h3>
+      <!-- Ganti src ini dengan logo/fotomu jika ada -->
+      <img src="images/logo.png" alt="Owner" class="owner-pic">
+      <p class="font-body" style="font-size: 13px;">Dikelola oleh Andhika. Mendedikasikan diri menghadirkan kreasi patisserie premium.</p>
+    </div>
+
+    <div class="widget">
+      <h3 class="font-elegant">Waktu Saat Ini</h3>
+      <div id="clockWidget" class="font-body" style="font-size: 18px; font-weight: bold; color: var(--gold);"></div>
+    </div>
+
+    <div class="widget">
+      <h3 class="font-elegant">Video Kami</h3>
+      <!-- Video tersemat menyesuaikan lebar sidebar otomatis -->
+      <iframe height="180" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </aside>
+
+</div>
+
+<footer id="kontak">
+  <h2 class="font-elegant">Kontak</h2>
+  <p class="font-body">Telp: (021) 12402051030040 · WhatsApp: 0800-0000-0000<br>Buka setiap hari 08.00 – 20.00</p>
+  <!-- Footer khusus UTS -->
+  <p class="font-body small" style="margin-top: 10px;">Desain by: <strong>Andhika</strong> | Official: <a href="https://casablancake.000webhostapp.com" style="color:var(--gold);">casablancake.com</a></p>
+  <p class="font-accent small">© 2026 Casablancake</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
