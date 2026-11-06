@@ -1,4 +1,4 @@
-// 1. Jam & tanggal di sidebar
+// Jam & tanggal di sidebar
 function tick() {
   var now = new Date();
   var c = document.getElementById('clock'), d = document.getElementById('date');
@@ -7,7 +7,7 @@ function tick() {
 }
 tick(); setInterval(tick, 1000);
 
-// 2. Penghitung kunjungan (disimpan di browser)
+// Penghitung kunjungan
 var v = document.getElementById('visits');
 if (v) {
   try {
@@ -24,7 +24,7 @@ toggle.addEventListener('click', function () {
   toggle.setAttribute('aria-expanded', open);
 });
 
-// 4. Form: tampilkan pesan sukses (tanpa server)
+// 4. Form: tampilkan pesan sukses
 document.querySelectorAll('form[data-form]').forEach(function (f) {
   f.addEventListener('submit', function (e) {
     e.preventDefault();
