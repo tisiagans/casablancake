@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registration – Casablancake</title>
+<meta name="description" content="Casablancake – toko kue serba putih yang lembut.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="banner">
+  <div class="banner-inner">
+    <a href="index.html" class="brand"><svg class="logo-svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#b89a5e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke-width=".8"/><path d="M6 12l6-5 6 5"/><path d="M7.5 11.5v6h9v-6"/><path d="M10.5 17.5v-3h3v3"/></svg>
+      <span><span class="font-elegant brand-name">Casablancake</span><span class="font-accent tagline">White House of Cakes</span></span>
+    </a>
+  </div>
+</header>
+
+<div class="navbar">
+  <button class="menu-toggle font-body" id="menuToggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+  <nav class="menu font-body" id="menu" aria-label="Menu utama">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="has-sub"><a href="about.html">About ▾</a>
+      <ul class="sub">
+        <li><a href="about.html#profil">Profil</a></li>
+        <li><a href="about.html#sejarah">Sejarah</a></li>
+        <li><a href="about.html#visi-misi">Visi &amp; Misi</a></li>
+        <li><a href="about.html#tujuan">Tujuan</a></li>
+        <li><a href="about.html#struktur">Struktur Organisasi</a></li>
+      </ul>
+    </li>
+    <li class="has-sub"><a href="index.html#artikel">Artikel ▾</a>
+      <ul class="sub">
+        <li><a href="artikel1.html">Cloud Vanilla Cake</a></li>
+        <li><a href="artikel2.html">Snow Chiffon Cake</a></li>
+        <li><a href="artikel3.html">White Cheesecake</a></li>
+      </ul>
+    </li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="registration.html" class="active">Registration</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="running font-accent" aria-label="Info berjalan"><span>✦ Selamat datang di Casablancake ✦ Promo Cloud Vanilla Cake beli 1 gratis 1 ✦ Pre-order cake ulang tahun dibuka setiap hari ✦ Buka 08.00 – 20.00 ✦</span></div>
+
+<div class="layout">
+<main>
+<section>
+  <h2 class="font-elegant">Registration</h2>
+  <p class="font-body">Daftar sebagai member atau pre-order cake. Kami akan menghubungimu untuk konfirmasi.</p>
+  <form class="form font-body" data-form data-success="Terima kasih, {nama}! Pendaftaranmu sudah kami terima.">
+    <label>Nama Lengkap<input type="text" name="nama" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>No. HP / WhatsApp<input type="tel" name="hp" required></label>
+    <label>Alamat<textarea name="alamat" rows="2" required></textarea></label>
+    <label>Pilihan Cake
+      <select name="cake" required>
+        <option value="">-- Pilih --</option>
+        <option>Cloud Vanilla Cake – Rp 85.000</option>
+        <option>Snow Chiffon Cake – Rp 70.000</option>
+        <option>White Cheesecake – Rp 95.000</option>
+      </select>
+    </label>
+    <label>Jumlah<input type="number" name="jumlah" min="1" value="1" required></label>
+    <label>Tanggal Pengambilan<input type="date" name="tanggal" required></label>
+    <label>Catatan<textarea name="catatan" rows="3"></textarea></label>
+    <button type="submit" class="btn font-body">Daftar</button>
+    <p class="msg" hidden></p>
+  </form>
+</section>
+</main>
+<aside class="sidebar">
+  <div class="widget">
+    <h3 class="font-elegant">Jam</h3>
+    <div class="clock font-body" id="clock">--:--:--</div>
+    <div class="date font-body" id="date"></div>
+  </div>
+  <div class="widget">
+    <h3 class="font-elegant">Profil Pemilik</h3>
+    <div class="owner"><span class="avatar font-elegant">NP</span>
+      <div class="font-body"><b>Nama Pemilik</b><br><small>Founder &amp; Head Baker</small></div></div>
+    <p class="font-body small-text">Memulai Casablancake dari dapur rumah dengan satu resep cake vanilla.</p>
+  </div>
+  <div class="widget">
+    <h3 class="font-elegant">Video</h3>
+    <!-- Ganti jNQXAC9IVRw dengan ID video YouTube milikmu -->
+    <div class="video"><iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Video Casablancake" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+  <div class="widget">
+    <h3 class="font-elegant">Statistik Pengunjung</h3>
+    <div class="stat font-body"><span id="visits">1</span><small>kunjungan di browser ini</small></div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <p class="font-body">© 2026 Casablancake. All rights reserved.</p>
+  <p class="font-body">Desain by Mohammad Tri Andhika Yustisia · Website resmi: <a href="http://localhost/latihan5a/uts/">localhost/latihan5a/uts</a></p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

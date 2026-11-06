@@ -3,108 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casablancake – White House of Cakes</title>
+<title>Home – Casablancake</title>
+<meta name="description" content="Casablancake – toko kue serba putih yang lembut.">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <h1 class="font-elegant logo">Casablancake</h1>
-  <nav class="font-body">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="#tentang">About ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="#tentang">Profil Lembaga</a></li>
-          <li><a href="#tentang">Visi & Misi</a></li>
-        </ul>
-      </li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="registration.html">Registration</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+<header class="banner">
+  <div class="banner-inner">
+    <a href="index.html" class="brand"><svg class="logo-svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#b89a5e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke-width=".8"/><path d="M6 12l6-5 6 5"/><path d="M7.5 11.5v6h9v-6"/><path d="M10.5 17.5v-3h3v3"/></svg>
+      <span><span class="font-elegant brand-name">Casablancake</span><span class="font-accent tagline">White House of Cakes</span></span>
+    </a>
+  </div>
 </header>
 
-<div class="marquee-container font-body">
-  <marquee behavior="scroll" direction="left">Selamat datang di Casablancake! Dapatkan promo spesial White Cheesecake diskon 15% minggu ini. Buka setiap hari pukul 08.00 - 20.00.</marquee>
+<div class="navbar">
+  <button class="menu-toggle font-body" id="menuToggle" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+  <nav class="menu font-body" id="menu" aria-label="Menu utama">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li class="has-sub"><a href="about.html">About ▾</a>
+      <ul class="sub">
+        <li><a href="about.html#profil">Profil</a></li>
+        <li><a href="about.html#sejarah">Sejarah</a></li>
+        <li><a href="about.html#visi-misi">Visi &amp; Misi</a></li>
+        <li><a href="about.html#tujuan">Tujuan</a></li>
+        <li><a href="about.html#struktur">Struktur Organisasi</a></li>
+      </ul>
+    </li>
+    <li class="has-sub"><a href="index.html#artikel">Artikel ▾</a>
+      <ul class="sub">
+        <li><a href="artikel1.html">Cloud Vanilla Cake</a></li>
+        <li><a href="artikel2.html">Snow Chiffon Cake</a></li>
+        <li><a href="artikel3.html">White Cheesecake</a></li>
+      </ul>
+    </li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="registration.html">Registration</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 </div>
 
-<section class="hero">
-  <p class="font-accent">White House of Cakes</p>
-  <h2 class="font-elegant">Pure White, Pure Delight</h2>
-  <p class="font-body">Cake lembut yang dibuat dengan sepenuh hati.</p>
-  <img src="images/longcake.jfif" alt="Cake Casablancake">
+<div class="running font-accent" aria-label="Info berjalan"><span>✦ Selamat datang di Casablancake ✦ Promo Cloud Vanilla Cake beli 1 gratis 1 ✦ Pre-order cake ulang tahun dibuka setiap hari ✦ Buka 08.00 – 20.00 ✦</span></div>
+
+<div class="layout">
+<main>
+<section class="intro">
+  <h2 class="font-elegant">Selamat Datang</h2>
+  <p class="font-body">Casablanca berarti “rumah putih”. Casablancake adalah toko kue dengan sentuhan serba putih yang bersih, hangat, dan lembut. Kami memanggang setiap hari dengan bahan pilihan.</p>
 </section>
-
-<div class="content-wrapper">
-  
-  <main class="main-body">
-    <div id="tentang" class="about">
-      <h2 class="font-elegant">Tentang Kami</h2>
-      <p class="font-body">Casablanca berarti “rumah putih”. Casablancake adalah toko kue dengan sentuhan serba putih yang bersih, hangat, dan lembut.</p>
-    </div>
-
-    <div id="cake" class="products" style="margin-top: 40px;">
-      <h2 class="font-elegant">Produk & Artikel</h2>
-      <div class="grid">
-        <figure data-url="cake1.html">
-          <img src="images/cake1.jfif" alt="Cloud Vanilla Cake">
-          <div class="info">
-            <h3 class="font-elegant">Cloud Vanilla Cake</h3>
-            <p class="font-body">Cake vanilla yang lembut dengan krim putih halus.</p>
-            <span class="price font-body">Rp 85.000</span>
-            <span class="read-more font-body">Read More</span>
-          </div>
-        </figure>
-        <figure data-url="cake2.html">
-          <img src="images/cake2.jfif" alt="Snow Chiffon Cake">
-          <div class="info">
-            <h3 class="font-elegant">Snow Chiffon Cake</h3>
-            <p class="font-body">Chiffon ringan dan empuk, taburan keju.</p>
-            <span class="price font-body">Rp 70.000</span>
-            <span class="read-more font-body">Read More</span>
-          </div>
-        </figure>
-        <figure data-url="cake3.html">
-          <img src="images/cake3.jfif" alt="White Cheesecake">
-          <div class="info">
-            <h3 class="font-elegant">White Cheesecake</h3>
-            <p class="font-body">Cheesecake creamy dasar biskuit renyah.</p>
-            <span class="price font-body">Rp 95.000</span>
-            <span class="read-more font-body">Read More</span>
-          </div>
-        </figure>
-      </div>
-    </div>
-  </main>
-
-  <aside class="sidebar">
-    <div class="widget">
-      <h3 class="font-elegant">Profil Pemilik</h3>
-      <img src="images/profil.jpg" alt="Owner" class="owner-pic">
-      <p class="font-body" style="font-size: 13px;">Dikelola oleh Andhika. Mendedikasikan diri menghadirkan kreasi patisserie premium.</p>
-    </div>
-
-    <div class="widget">
-      <h3 class="font-elegant">Waktu Saat Ini</h3>
-      <div id="clockWidget" class="font-body" style="font-size: 18px; font-weight: bold; color: var(--gold);"></div>
-    </div>
-
-    <div class="widget">
-      <h3 class="font-elegant">Video Kami</h3>
-      <iframe height="180" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </aside>
-
+<section id="artikel">
+  <h2 class="font-elegant">Artikel &amp; Produk Terbaru</h2>
+  <article class="post">
+  <a href="artikel1.html"><img src="images/cake1.jfif" alt="Cloud Vanilla Cake, Si Putih yang Lembut" width="400" height="260" loading="lazy"></a>
+  <div>
+    <small class="font-body meta">Produk · 2 November 2026</small>
+    <h3 class="font-elegant"><a href="artikel1.html">Cloud Vanilla Cake, Si Putih yang Lembut</a></h3>
+    <p class="font-body">Cloud Vanilla Cake adalah produk andalan Casablancake. Spons vanilla yang empuk dipadukan dengan krim putih halus yang tidak terlalu manis.</p>
+    <a class="more font-body" href="artikel1.html">Read More →</a>
+  </div>
+</article>
+<article class="post">
+  <a href="artikel2.html"><img src="images/cake2.jfif" alt="Snow Chiffon Cake untuk Setiap Momen" width="400" height="260" loading="lazy"></a>
+  <div>
+    <small class="font-body meta">Produk · 3 November 2026</small>
+    <h3 class="font-elegant"><a href="artikel2.html">Snow Chiffon Cake untuk Setiap Momen</a></h3>
+    <p class="font-body">Snow Chiffon Cake dibuat dengan putih telur yang dikocok hingga kaku, hasilnya cake yang sangat ringan dan empuk.</p>
+    <a class="more font-body" href="artikel2.html">Read More →</a>
+  </div>
+</article>
+<article class="post">
+  <a href="artikel3.html"><img src="images/cake3.jfif" alt="White Cheesecake: Creamy dan Tidak Terlalu Manis" width="400" height="260" loading="lazy"></a>
+  <div>
+    <small class="font-body meta">Produk · 4 November 2026</small>
+    <h3 class="font-elegant"><a href="artikel3.html">White Cheesecake: Creamy dan Tidak Terlalu Manis</a></h3>
+    <p class="font-body">White Cheesecake memakai krim keju berkualitas di atas dasar biskuit yang renyah. Teksturnya lembut dan meleleh di mulut.</p>
+    <a class="more font-body" href="artikel3.html">Read More →</a>
+  </div>
+</article>
+</section>
+<section class="notice">
+  <h2 class="font-elegant">Pengumuman</h2>
+  <ul class="font-body">
+    <li>Pre-order cake ulang tahun dibuka setiap hari, minimal H-1.</li>
+    <li>Promo Cloud Vanilla Cake beli 1 gratis 1 sampai akhir bulan.</li>
+    <li>Toko buka setiap hari pukul 08.00 – 20.00.</li>
+  </ul>
+</section>
+</main>
+<aside class="sidebar">
+  <div class="widget">
+    <h3 class="font-elegant">Jam</h3>
+    <div class="clock font-body" id="clock">--:--:--</div>
+    <div class="date font-body" id="date"></div>
+  </div>
+  <div class="widget">
+    <h3 class="font-elegant">Profil Pemilik</h3>
+    <div class="owner"><span class="avatar font-elegant">NP</span>
+      <div class="font-body"><b>Nama Pemilik</b><br><small>Founder &amp; Head Baker</small></div></div>
+    <p class="font-body small-text">Memulai Casablancake dari dapur rumah dengan satu resep cake vanilla.</p>
+  </div>
+  <div class="widget">
+    <h3 class="font-elegant">Video</h3>
+    <!-- Ganti jNQXAC9IVRw dengan ID video YouTube milikmu -->
+    <div class="video"><iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Video Casablancake" loading="lazy" allowfullscreen></iframe></div>
+  </div>
+  <div class="widget">
+    <h3 class="font-elegant">Statistik Pengunjung</h3>
+    <div class="stat font-body"><span id="visits">1</span><small>kunjungan di browser ini</small></div>
+  </div>
+</aside>
 </div>
 
-<footer id="kontak">
-  <h2 class="font-elegant">Kontak</h2>
-  <p class="font-body">Telp: (021) 12402051030040 · WhatsApp: 0800-0000-0000<br>Buka setiap hari 08.00 – 20.00</p>
-  <p class="font-body small" style="margin-top: 10px;">Desain by: <strong>Andhika</strong> | Official: <a href="https://casablancake.000webhostapp.com" style="color:var(--gold);">casablancake.com</a></p>
-  <p class="font-accent small">© 2026 Casablancake</p>
+<footer>
+  <p class="font-body">© 2026 Casablancake. All rights reserved.</p>
+  <p class="font-body">Desain by Mohammad Tri Andhika Yustisia · Website resmi: <a href="http://localhost/latihan5a/uts/">localhost/latihan5a/uts</a></p>
 </footer>
 
 <script src="js/script.js"></script>

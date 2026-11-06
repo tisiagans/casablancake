@@ -1,23 +1,36 @@
-document.querySelectorAll('figure[data-url]').forEach(function (item) {
-  item.addEventListener('click', function () {
-    window.location.href = item.dataset.url;
-  });
+// 1. Jam & tanggal di sidebar
+function tick() {
+  var now = new Date();
+  var c = document.getElementById('clock'), d = document.getElementById('date');
+  if (c) c.textContent = now.toLocaleTimeString('id-ID');
+  if (d) d.textContent = now.toLocaleDateString('id-ID', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+}
+tick(); setInterval(tick, 1000);
+
+// 2. Penghitung kunjungan (disimpan di browser)
+var v = document.getElementById('visits');
+if (v) {
+  try {
+    var n = (parseInt(localStorage.getItem('cb_visits'), 10) || 0) + 1;
+    localStorage.setItem('cb_visits', n);
+    v.textContent = n;
+  } catch (e) {}
+}
+
+// 3. Tombol menu untuk HP
+var toggle = document.getElementById('menuToggle'), menu = document.getElementById('menu');
+toggle.addEventListener('click', function () {
+  var open = menu.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
 });
 
-function updateClock() {
-  const now = new Date();
-  let h = now.getHours();
-  let m = now.getMinutes();
-  let s = now.getSeconds();
-
-  h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m;
-  s = s < 10 ? "0" + s : s;
-  
-  const clockElement = document.getElementById("clockWidget");
-  if(clockElement) {
-    clockElement.innerText = h + ":" + m + ":" + s + " WIB";
-  }
-}
-setInterval(updateClock, 1000);
-updateClock();
+// 4. Form: tampilkan pesan sukses (tanpa server)
+document.querySelectorAll('form[data-form]').forEach(function (f) {
+  f.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msg = f.querySelector('.msg');
+    msg.textContent = f.dataset.success.replace('{nama}', f.elements.nama.value);
+    msg.hidden = false;
+    f.reset();
+  });
+});
