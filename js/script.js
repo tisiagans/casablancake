@@ -17,14 +17,14 @@ if (v) {
   } catch (e) {}
 }
 
-// 3. Tombol menu untuk HP
+// Tombol menu untuk HP
 var toggle = document.getElementById('menuToggle'), menu = document.getElementById('menu');
 toggle.addEventListener('click', function () {
   var open = menu.classList.toggle('open');
   toggle.setAttribute('aria-expanded', open);
 });
 
-// 4. Form: tampilkan pesan sukses
+// Form: tampilkan pesan sukses
 document.querySelectorAll('form[data-form]').forEach(function (f) {
   f.addEventListener('submit', function (e) {
     e.preventDefault();
